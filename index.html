@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クレジット - 音波ルネ</title>
+    <link rel="icon" href="https://www.image2url.com/r2/default/files/1787816924108-7f5f6261-cd89-46f4-9914-fdb598add990.png" type="image/png">
+    <style>
+        :root {
+            --primary-color: #333333;
+            --accent-color: #007acc;
+            --bg-color: #ffffff;
+            --sub-bg-color: #f8f9fa;
+            --text-color: #222222;
+            --border-color: #e5e5e5;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+        main {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+            animation: fadeInUp 0.6s ease-out 0.2s forwards;
+            opacity: 0;
+        }
+        footer {
+            animation: fadeInUp 0.6s ease-out 0.4s forwards;
+            opacity: 0;
+            text-align: center;
+            padding: 2.5rem;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid var(--border-color);
+            margin-top: 5rem;
+            background: var(--sub-bg-color);
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav li { margin: 0 0.8rem; }
+        nav a {
+            display: block;
+            padding: 1.2rem 0;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover, nav a.active { color: var(--accent-color); }
+        section {
+            background: var(--bg-color);
+            padding: 2.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+        h2 {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.8rem;
+            margin-top: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .credit-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1.5rem;
+        }
+        .credit-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .credit-item:last-child { border-bottom: none; }
+        .credit-role {
+            font-weight: 600;
+            color: #555;
+        }
+        .credit-name {
+            color: var(--text-color);
+        }
+        @media (max-width: 600px) {
+            nav li { margin: 0 0.4rem; }
+            .credit-item { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="https://html.cafe/x385449da">ホーム</a></li>
+            <li><a href="https://html.cafe/xad35a2ef">プロフィール</a></li>
+            <li><a href="https://html.cafe/x0a447b4c">音源配布</a></li>
+            <li><a href="https://html.cafe/xd1dcf144">関連リンク</a></li>
+            <li><a href="https://html.cafe/x49431d54">利用規約</a></li>
+            <li><a href="https://html.cafe/x7b9d0e6a" class="active">クレジット</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>クレジット</h2>
+            <p>「音波ルネ」の制作に関わってくださった方々のご紹介です。</p>
+            
+            <ul class="credit-list">
+                <li class="credit-item">
+                    <span class="credit-role">CV</span>
+                    <span class="credit-name">不明</span>
+                </li>
+                <li class="credit-item">
+                    <span class="credit-role">キャラクターデザイン / イラスト</span>
+                    <span class="credit-name">ゆーかり、天然水、らす、6chメンバー</span>
+                </li>
+               <li class="credit-item">
+                    <span class="credit-role">キャラクター構想</span>
+                    <span class="credit-name">コンコルド効果、6chメンバー</span>
+                </li>
+                <li class="credit-item">
+                    <span class="credit-role">ロゴデザイン</span>
+                    <span class="credit-name">ゆーかり、らす</span>
+                </li>
+                <li class="credit-item">
+                    <span class="credit-role">webサイトクリエーター</span>
+                    <span class="credit-name">eee</span>
+                </li>
+              <li class="credit-item">
+                    <span class="credit-role">© 2026 音波ルネ制作委員会メンバー/span>
+                    <span class="credit-name">eee、コンコルド効果、風ふきゃ名無しだお</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 音波ルネ制作委員会</p>
+    </footer>
+
+</body>
+</html>
